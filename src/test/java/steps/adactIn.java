@@ -31,6 +31,7 @@ public class adactIn {
         driver.get(baseUrl + "/HotelApp/index.php");
     }
 
+
     @Given("^I want to make a hotel booking through AdactIn$")
     public void login() throws Throwable {
         WebElement username = driver.findElement(By.id("username"));
@@ -113,6 +114,7 @@ public class adactIn {
         logout.click();
         assertEquals("You have successfully logged out. Click here to login again", driver.findElement(By.cssSelector("td.reg_success")).getText());
     }
+
 
     @After
     public void tearDown() throws Exception {
