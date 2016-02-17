@@ -35,10 +35,11 @@
 ## Code Setup
 
 `git clone https://github.com/Wamikas/Functional-tests.git`
+`git clone https://github.com/lroslonek/WiremockStandaloneExample.git`
 
 
 ## Running tests
-
+Note: Before running the tests make sure that Wiremock server is up `java -jar wiremock-1.55-standalone.jar` 
 To execute all tests `mvn test`
 
 
