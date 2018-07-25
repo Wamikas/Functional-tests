@@ -12,6 +12,6 @@ import org.junit.runner.RunWith;
         },
         features="features/"
 )
-class RunCukesTest {
+public class RunCukesTest {
     }
 

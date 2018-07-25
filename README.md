@@ -1,4 +1,4 @@
-# Behaviour Driven Testing Framework 
+# Behaviour Driven Testing Framework
 
 ## Tech stack
 
@@ -6,7 +6,7 @@
 | --- | --- |
 | CucumberJVM | BDD layer |
 | JUnit | Assertion library |
-| Selenium-WebDriver | Test framework | 
+| Selenium-WebDriver | Test framework |
 | Java | Test scripting language |
 | Rest Assured | API testing |
 | Hamcrest | Assertion library |
@@ -23,10 +23,10 @@
 ## Machine setup
 
 #### For Mac
+
 1. Open Terminal
 2. Type vim `.bash_profile`
-3. `export JAVA_HOME=$"/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home”`
-4. `export PATH=$"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wamikas/Documents/apache-maven-3.3.9/bin”`
+3. `export JAVA_HOME=$(/usr/libexec/java_home)`
 5. Click ESC then type :wq (save and quit in vim)
 6. Then type `source .bash_profile`
 7. `echo $JAVA_HOME`
@@ -34,12 +34,14 @@
 
 ## Code Setup
 
-`git clone https://github.com/Wamikas/Functional-tests.git`
-`git clone https://github.com/lroslonek/WiremockStandaloneExample.git`
+    brew install geckodriver
+    git clone https://github.com/Wamikas/Functional-tests.git
+    git clone https://github.com/lroslonek/WiremockStandaloneExample.git
 
 
 ## Running tests
-Note: Before running the tests make sure that Wiremock server is up `java -jar wiremock-1.55-standalone.jar` 
+
+Note: Before running the tests make sure that Wiremock server is up `java -jar wiremock-1.55-standalone.jar`
 To execute all tests `mvn test`
 
 
